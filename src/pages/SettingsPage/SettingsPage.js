@@ -157,7 +157,7 @@ function SettingsPage() {
         }
         localStorage.setItem('setting', JSON.stringify(setting))
         localStorage.setItem('theme', theme)
-    }, [setting])
+    }, [setting, theme])
 
     return (
         <div className={cx('container')}>
