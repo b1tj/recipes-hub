@@ -1,0 +1,22 @@
+@import '../../partials/variables';
+
+.container {
+    display: block;
+    width: fit-content;
+    padding: 1em 1em;
+    background-color: var(--primary-color);
+    box-shadow: 2px 2px 5px 1px var(--shadow-color);
+    border-radius: 6px;
+    cursor: pointer;
+    button {
+        border: none;
+    }
+}
+
+.link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white-color;
+    text-align: center;
+    font-size: 1.8em;
+}

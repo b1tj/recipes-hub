@@ -1,0 +1,21 @@
+@import '../partials/variables';
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 55px;
+    font-size: var(--font-size);
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+    background-color: var(--background-light);
+}
+
+button {
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
+}
+
+.bold-text {
+    font-weight: bold;
+}

@@ -1,0 +1,21 @@
+@import '../../partials/variables';
+
+.title {
+    margin-top: 1.5em;
+    font-size: 2.4em;
+    color: var(--text-color);
+}
+
+.options-container {
+    margin-top: 1em;
+    padding: 1em;
+    height: 7em;
+    border-radius: 6px;
+    border-left: 8px solid var(--primary-color);
+    box-shadow: 0 0 8px var(--shadow-color);
+    background-color: var(--background-light);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2em;
+}

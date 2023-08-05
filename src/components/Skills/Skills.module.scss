@@ -1,0 +1,80 @@
+@import '../../partials/variables';
+@import '../../partials/animations';
+@import '../../partials/functions';
+
+.container {
+    padding-inline: 20vw;
+    margin-top: 5em;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    .col {
+        width: 50%;
+        &:nth-child(2) {
+            padding-left: 2em;
+        }
+    }
+}
+
+.header {
+    font-size: $heading-size;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 0.5em;
+    color: var(--text-color);
+}
+
+.skills {
+    margin-bottom: 1.5em;
+    .skill {
+        padding-left: 0.4em;
+        color: var(--text-light);
+        font-size: 1.6em;
+        font-weight: bold;
+        margin-bottom: 0.6em;
+        border-left: 4px solid var(--primary-color);
+        transform: translateX(100%);
+        opacity: 0;
+        animation: getAnimationDuration(0.4) slideInRight forwards;
+        @for $i from 1 through 6 {
+            &:nth-child(#{$i}) {
+                animation-delay: getAnimationDuration(0.1) * $i;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 7em;
+        padding-inline: 5vw;
+        flex-direction: column;
+        .col {
+            width: 100%;
+            &:nth-child(2) {
+                padding: 0;
+            }
+        }
+        a {
+            margin: 0 auto;
+        }
+        .skill {
+            display: inline-block;
+            margin: 0.75em;
+        }
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .image {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        padding-inline: 15vw;
+    }
+}

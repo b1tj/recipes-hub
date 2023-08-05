@@ -1,0 +1,36 @@
+@import '../../partials/variables';
+@import '../../partials/animations';
+@import '../../partials/functions';
+
+.recipes-container {
+    margin-top: 2em;
+    padding-inline: 20vw;
+    font-size: 1.6em;
+    min-height: 60vh;
+}
+
+.recipes-result-container {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .recipes-container {
+        padding-inline: 5vw;
+    }
+
+    .recipes-result-container {
+        margin-top: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em 1em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .recipes-container {
+        padding-inline: 15vw;
+    }
+}

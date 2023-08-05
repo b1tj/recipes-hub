@@ -1,0 +1,54 @@
+@import '../../partials/variables';
+
+.footer {
+    margin-top: 3.8em;
+    padding: 2em 20vw;
+    background-color: $black-color;
+    color: $white-color;
+    display: flex;
+    gap: 2em;
+    h4 {
+        font-size: 2em;
+    }
+    p,
+    a {
+        margin-top: 1em;
+        font-size: 1.6em;
+    }
+}
+
+.about {
+    flex: 3;
+    .about-text {
+        padding-right: 5em;
+    }
+}
+
+.contact {
+    flex: 2;
+}
+
+.socials {
+    a {
+        display: block;
+        color: $white-color;
+    }
+    flex: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding-inline: 5vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4em 2em;
+
+        .about {
+            grid-column: span 2;
+        }
+        .contact,
+        .socials {
+            grid-column: span 1;
+        }
+    }
+}

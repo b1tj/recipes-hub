@@ -1,0 +1,61 @@
+@import '../../partials/variables';
+
+.container {
+    min-height: 65vh;
+    padding-inline: 20vw;
+}
+
+.option {
+    width: 4.5em;
+    height: 4.5em;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.light {
+        background-color: $white-color;
+    }
+    &.dark {
+        background-color: $black-color;
+    }
+    .check {
+        font-size: 1.6em;
+        height: 70%;
+        width: 70%;
+        background-color: var(--primary-color);
+        box-shadow: 0 2px 4px var(--shadow-color);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.btn {
+    text-transform: uppercase;
+    background-color: var(--primary-color);
+    color: $white-color;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5em 0.75em;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    span {
+        margin-left: 3px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding-inline: 5vw;
+    }
+    .btn {
+        width: auto;
+        height: 80%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}

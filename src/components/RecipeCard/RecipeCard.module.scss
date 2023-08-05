@@ -1,0 +1,41 @@
+@import '../../partials/variables';
+
+.recipe-card {
+    box-shadow: 0 5px 15px var(--shadow-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.description {
+    padding: 15px;
+}
+
+.recipe-name {
+    margin-top: 0.5em;
+}
+
+.author-img {
+    width: 60px;
+    height: 60px;
+    border: 3px solid $white-color;
+    box-shadow: 0 1px 3px var(--shadow-color);
+    border-radius: 50%;
+    margin-top: -50px;
+    z-index: 2;
+}
+
+.recipe-details {
+    margin-bottom: 0.5em;
+    color: var(--text-light);
+    padding: 0.5em 0;
+}
+
+.view-btn {
+    text-decoration: none;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    &:hover {
+        text-decoration: underline;
+    }
+}

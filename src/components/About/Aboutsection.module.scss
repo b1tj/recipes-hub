@@ -1,0 +1,58 @@
+@import '../../partials/variables';
+@import '../../partials/functions';
+
+.about-section {
+    padding-inline: 20vw;
+    margin-top: 3em;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+    .col {
+        width: 50%;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+    }
+}
+
+.about-header {
+    font-size: $heading-size;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 0.5em;
+    color: var(--text-color);
+}
+
+.about-description {
+    color: var(--text-light);
+    font-size: 1.8em;
+    margin-bottom: 0.8em;
+    padding-right: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    .about-section {
+        padding-inline: 5vw;
+        flex-direction: column;
+        .col {
+            width: 100%;
+        }
+        a {
+            margin: 0 auto;
+        }
+    }
+    .gallery {
+        margin-top: 3em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .about-section {
+        padding-inline: 15vw;
+        gap: 2em;
+    }
+}
